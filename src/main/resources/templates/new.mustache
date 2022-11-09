@@ -1,0 +1,17 @@
+
+{{>layouts/header}}
+<form class="container" action="/articles" method="post">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Title</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" name= "title" aria-describedby="title">
+        <div id="emailHelp" class="form-text">제목을 입력하세요.</div>
+    </div>
+    <div class="mb-3">
+        <label for="content" class="form-label">Content</label>
+        <textarea type="text" class="form-control" row="3" id="content" name= "content" aria-describedby="title"></textarea>
+        <div id="content" class="form-text">내용을 입력하세요.</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+{{>layouts/footer}}
